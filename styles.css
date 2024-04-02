@@ -3,3 +3,16 @@
 @import 'tailwindcss/utilities';
 
 /* Add your custom styles below */
+
+img{
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+.conteneur{
+    perspective: 2000px;
+}
+
+.bague{
+    /* transform: rotateY(180deg); */
+}
