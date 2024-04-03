@@ -25,12 +25,27 @@ gsap.timeline()
     // }, '-=0.5')
   
 
-    $('.btn').on('click', function(){
+    $('.next-btn').on('click', function(){
         counter += 36;
         imgId += 1;
         if(imgId > 10){
             imgId = 1;
         } 
+        gsap.to('.ring', { rotationY: counter});
+        
+        let current = document.getElementById(`${imgId}`);
+        // alert(current);
+        
+        gsap.to('.img', {opacity:(i,t)=>(t==current)? 1:0.5, ease:'power3'})
+    });
+
+    $('.prev-btn').on('click', function(){
+        counter -= 36;
+        imgId -= 1;
+        if(imgId < 1){
+            imgId = 10;
+        }
+        
         gsap.to('.ring', { rotationY: counter});
         
         let current = document.getElementById(`${imgId}`);
