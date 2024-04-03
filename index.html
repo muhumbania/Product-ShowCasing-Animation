@@ -7,13 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>ShowCasing</title>
 </head>
-<body>
-    <button class="next-btn">Next</button>
-    <button class="prev-btn">Previous</button>
+<body class="flex flex-col-reverse items-center justify-between">
+
     <div class="stage">
-  
         <div class="conteneur">
-          <div class="ring">
+        <div class="ring">
             <div class="img" id="1"><img src="./iphone15.jpg" class="h-96 border border-red-600" alt=""></div>
             <div class="img" id="2"><img src="./iphone15.jpg" class="h-96" alt=""></div>
             <div class="img" id="3"><img src="./iphone15.jpg" class="h-96" alt=""></div>
@@ -24,11 +22,16 @@
             <div class="img" id="8"><img src="./iphone15.jpg" class="h-96" alt=""></div>
             <div class="img" id="9"><img src="./iphone15.jpg"class="h-96" alt=""></div>
             <div class="img" id="10"><img src="./iphone15.jpg" class="h-96" alt=""></div>
-          </div>
         </div>
-        
+        </div>
     </div>
 
+    <div class="w-full flex items-center justify-center pb-24 gap-8">
+        <box-icon name='chevron-left' class="next-btn bg-gray-700 rounded-full cursor-pointer active:bg-gray-900" color="white" size="md"></box-icon>
+        <box-icon name='chevron-right' class="prev-btn bg-gray-700 rounded-full cursor-pointer active:bg-gray-900" color="white" size="md"></box-icon>
+    </div>
+    
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
