@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>ShowCasing</title>
 </head>
 <body>
-    <div class="h-[100vh]  bg-slate-50 conteneur flex items-center justify-center gap-2">
-        <box-icon name='chevron-left' size="md" class="cursor-pointer bg-gray-100 rounded-full active:bg-gray-200"></box-icon>
-        <div class="bague flex gap-2 justify-center items-center h-full">
-            <img src="./iphone15.jpg" alt="" class="h-96 phone">
-            <img src="./iphone15.jpg" alt="" class="h-96">
-            <img src="./iphone15.jpg" alt="" class="h-96">
-            <img src="./iphone15.jpg" alt="" class="h-96">
+    <button class="btn">Next</button>
+    <div class="stage">
+  
+        <div class="conteneur">
+          <div class="ring">
+            <div class="img" id="1"><img src="./iphone15.jpg" class="h-96 border border-red-600" alt=""></div>
+            <div class="img" id="2"><img src="./iphone15.jpg" class="h-96" alt=""></div>
+            <div class="img" id="3"><img src="./iphone15.jpg" class="h-96" alt=""></div>
+            <div class="img" id="4"><img src="./iphone15.jpg" class="h-96" alt=""></div>
+            <div class="img" id="5"><img src="./iphone15.jpg" class="h-96" alt=""></div>
+            <div class="img" id="6"><img src="./iphone15.jpg" class="h-96" alt=""></div>
+            <div class="img" id="7"><img src="./iphone15.jpg" class="h-96" alt=""></div>
+            <div class="img" id="8"><img src="./iphone15.jpg" class="h-96" alt=""></div>
+            <div class="img" id="9"><img src="./iphone15.jpg"class="h-96" alt=""></div>
+            <div class="img" id="10"><img src="./iphone15.jpg" class="h-96" alt=""></div>
+          </div>
         </div>
-        <box-icon name='chevron-right' size="md" class="cursor-pointer bg-gray-100 rounded-full active:bg-gray-200"></box-icon>
+        
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

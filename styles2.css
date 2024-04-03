@@ -13,14 +13,14 @@ html, body, .stage, .ring, .img {
   
   html, body, .stage {
     overflow:hidden;
-    background:#585857;  
+    background:#000;  
   }
   
   div, svg {
     position: absolute;
   }
   
-  .conteneur {
+  .container {
     perspective: 2000px;
     width: 300px;
     height: 400px;  
